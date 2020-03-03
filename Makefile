@@ -1,5 +1,6 @@
-PROJECT = rabbitmq_message_timestamp
-PROJECT_DESCRIPTION = RabbitMQ Message Timestamp
+PROJECT = rabbitmq_node_scrubber
+PROJECT_DESCRIPTION = RabbitMQ Node Scrubber
+PROJECT_VERSION = "0.1"
 
 define PROJECT_APP_EXTRA_KEYS
 	{broker_version_requirements, ["3.7.0"]}
