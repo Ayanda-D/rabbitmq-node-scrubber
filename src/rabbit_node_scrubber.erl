@@ -36,5 +36,5 @@ nodes_excl_me(Nodes) -> Nodes -- [node()].
 e(Tag) -> throw({error, {Tag, "You cannot leave a cluster if no online nodes are present."}}).
 
 output(Format, Args) ->
-  rabbit_log:info(Format, Args),
+  error_logger:info_msg(Format, Args),
   io:format(Format, Args).
